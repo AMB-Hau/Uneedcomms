@@ -1,7 +1,0 @@
-###BASIC###
-/basic.html
-/basic_01.html (Without best review)
-
-###NATURE###
-/nature.html
-/nature_01.html (Without best review)
