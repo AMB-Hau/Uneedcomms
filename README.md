@@ -4,7 +4,7 @@ Basic/Nature/Trendy
 
 ## Path
 
-```php
+```python
 
 # Basic
 /basic/basic.html
