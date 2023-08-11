@@ -499,3 +499,11 @@ strong {
   border-radius: 50%;
   padding: 0;
 }
+
+#wrapper #review.desc ul {
+  width: calc(100% - 230px);
+}
+
+#wrapper #review.desc .content.no-image ul {
+  width: 100%;
+}

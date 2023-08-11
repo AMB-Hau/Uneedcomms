@@ -291,7 +291,7 @@ strong {
 }
 
 #wrapper .desc .content.no-image {
-  padding: 20px 40px 70px 40px;
+  padding: 20px 40px 50px 40px;
 }
 
 #wrapper #best_review.desc .content:nth-child(2n) {
@@ -329,6 +329,7 @@ strong {
   font-size: 22px;
   margin: 15px 0 0;
   position: relative;
+  padding-bottom: 40px;
 }
 
 #wrapper .desc .review_date {

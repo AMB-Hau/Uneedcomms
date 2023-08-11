@@ -348,7 +348,7 @@ strong {
 /* theme-insta */
 #wrapper .index {
   padding: 30px 45px 45px 45px;
-  background: url(../images/trendy-star-bg.png) no-repeat top 65px center;
+  background: url(../images/trendy/trendy-star-bg.png) no-repeat top 65px center;
   background-size: 83%;
 }
 
@@ -370,7 +370,7 @@ strong {
 #wrapper #main_title:before {
   position: absolute;
   content: "";
-  background: url(../images/trendy-search.png) no-repeat;
+  background: url(../images/trendy/trendy-search.png) no-repeat;
   background-size: contain;
   width: 187px;
   height: 195px;
@@ -383,7 +383,7 @@ strong {
   width: 133px;
   height: 84px;
   content: "";
-  background: url(../images/trendy-plane.png) no-repeat;
+  background: url(../images/trendy/trendy-plane.png) no-repeat;
   right: -45px;
   top: 155%;
   transform: translateY(-50%);
@@ -425,7 +425,7 @@ strong {
 }
 
 #wrapper .grade #point {
-  background: url(../images/trendy-point-bg.png) no-repeat;
+  background: url(../images/trendy/trendy-point-bg.png) no-repeat;
   background-size: contain;
   width: 268px;
   height: 126px;
@@ -449,7 +449,7 @@ strong {
 }
 
 #wrapper .grade #amount {
-  background: url(../images/trendy-amount-bg.png) no-repeat;
+  background: url(../images/trendy/trendy-amount-bg.png) no-repeat;
   background-size: contain;
   width: 268px;
   height: 126px;
@@ -500,7 +500,7 @@ strong {
 #wrapper .desc .info .icon.star {
   width: 125px;
   height: 25px;
-  background: url("../images/star.svg") repeat center;
+  background: url("../images/trendy/star.svg") repeat center;
   background-size: 25px;
   background-repeat: repeat-x;
 }

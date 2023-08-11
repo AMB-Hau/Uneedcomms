@@ -487,6 +487,9 @@ strong {
 #wrapper #review.desc ul {
   width: calc(100% - 250px);
 }
+#wrapper #review.desc .content.no-image ul {
+  width: 100%;
+}
 #wrapper #review.desc .review_date {
   position: relative;
   left: auto;

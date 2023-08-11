@@ -443,7 +443,7 @@ strong {
   margin-right: 10px;
   width: 100px;
   height: 20px;
-  background: url("../images/star.svg") repeat center;
+  background: url("../images/basic/star.svg") repeat center;
   background-size: 20px;
   background-repeat: repeat-x;
 }

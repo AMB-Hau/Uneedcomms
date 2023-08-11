@@ -1,12 +1,20 @@
 @charset "UTF-8";
+@import url(https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css);
+
+@font-face {
+  font-family: "JejuGothic-Regular";
+  src: url("../fonts/JejuGothic-Regular.ttf") format('ttf');
+}
 
 :root {
+  --font-family-sans-serif: Pretendard;
+  --font-family-base: --font-family-sans-serif;
   --font-weight-base: 500;
   --line-height-base: 1.3;
-  --color-bg: #35393a;
+  --color-bg: #fff0f2;
   --color-primary: #2adacf;
   --color-secondary: #000;
-  --color-text: #111111;
+  --color-text: #000;
   --color-white: #fff;
   --color-black: #111;
   --color-gray: #aaa;
@@ -16,8 +24,10 @@
   --min-width: 1020px;
   --max-height: 2000px;
   --content-width: 950px;
-  --h1-font-size: 55px;
+  --h1-font-size: 73px;
 }
+
+
 
 html,
 body,
@@ -106,7 +116,7 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Pretendard;
   vertical-align: baseline;
   text-align: center;
 }
@@ -148,6 +158,15 @@ q:after {
   content: none;
 }
 
+.h1,
+h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--h1-font-size);
+  line-height: normal;
+  letter-spacing: -1.2px;
+}
+
 .text-primary {
   color: var(--color-primary);
 }
@@ -182,13 +201,14 @@ body {
   display: block;
   margin: 0;
   padding: 0;
-  background: var(--color-bg);
+  background-color: var(--color-bg);
   font-family: var(--font-family-base);
   font-size: var(--font-size);
   font-weight: var(--font-weight-base);
   line-height: var(--line-height-base);
   color: var(--color-text);
   text-align: center;
+  letter-spacing: -2px;
 }
 
 img {
@@ -224,6 +244,12 @@ strong {
   align-items: center;
 }
 
+.title__section {
+  width: 286px;
+  height: auto;
+  margin: 0 auto 20px;
+}
+
 #wrapper .title,
 #wrapper .grade {
   position: relative;
@@ -231,16 +257,17 @@ strong {
 }
 
 #wrapper .desc {
+  overflow: hidden;
   position: relative;
   margin: 0 auto;
   text-align: left;
 }
 
-#wrapper .desc:after
-{
-    transform: rotate(3deg);
-    right: 10px;
-    left: auto;
+#wrapper .title h1 {
+  color: #FF6D6D;
+  font-size: 55px;
+  font-family: "JejuGothic-Regular";
+  margin-bottom: 70px;
 }
 
 #wrapper .grade ul {
@@ -259,21 +286,30 @@ strong {
   width: 100%;
   margin-bottom: 30px;
   background: #fff;
-  padding: 20px 40px 20px 20px;
-  border-radius: 25px;
-  position: relative;
+  border-radius: 50px;
+  padding: 15px 30px 15px 15px;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.05);
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.05);
+}
+
+#wrapper .desc .content.no-image {
+  padding: 30px 30px 70px;
+}
+
+#wrapper .desc .content.no-image .review_date {
+  bottom: -50px;
 }
 
 #wrapper .desc .content:last-child {
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 #wrapper .desc .content .reviewImg {
   width: 270px;
   height: 270px;
+  border-radius: 40px;
   overflow: hidden;
-  position: relative;
-  border-radius: 20px;
 }
 
 #wrapper .desc .content .reviewImg img {
@@ -283,14 +319,11 @@ strong {
 
 #wrapper .desc ul {
   width: calc(100% - 300px);
+  position: relative;
 }
 
 #wrapper .desc .content.no-image ul {
   width: 100%;
-}
-
-#wrapper .desc .content.no-image {
-  padding: 20px 40px 50px 40px;
 }
 
 #wrapper .desc li {
@@ -300,33 +333,37 @@ strong {
 #wrapper .desc li.info {
   display: flex;
   align-items: center;
+  margin-bottom: 15px;
+}
+
+#wrapper .desc li.info span {
+  display: grid;
 }
 
 #wrapper .desc .review_content {
   text-align: left;
   line-height: 30px;
   color: var(--color-black);
-  letter-spacing: 1px;
+  letter-spacing: -1px;
   font-size: 22px;
-  margin: 15px 0 0;
-  position: relative;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
 }
-
 #wrapper .desc .review_date {
-  color: #656565;
-  font-size: 16px;
+  color: #626262;
+  font-size: 18px;
+  letter-spacing: 0px;
   position: absolute;
-  right: 40px;
-  bottom: 20px;
+  right: 30px;
+  bottom: 5px;
+  font-weight: 200;
 }
 #wrapper .desc .review_date span {
-  color: #262626;
-  font-weight: 600;
+  color: #FD6E7E;
+  font-weight: 500;
 }
 /* theme-insta */
 #wrapper .index {
-  padding: 100px 45px 45px 45px;
+  padding: 90px 45px 30px 45px;
 }
 
 #wrapper .header {
@@ -339,152 +376,104 @@ strong {
   width: 100%;
 }
 
-#wrapper #main_title {
-  position: relative;
-  margin-bottom: 50px;
-}
-
-#wrapper #main_title h1 {
-  font-size: var(--h1-font-size);
-  font-family: 'Anek Devanagari', sans-serif;
-  position: relative;
-  z-index: 1;
-  font-weight: 700;
-  color: #fff;
-}
-
-#wrapper #sub_title {
-  font-family: 'Anek Devanagari', sans-serif;
-  background-color: #575757;
-  color: #fff;
-  padding: 25px 0 16px;
-  margin-bottom: 50px;
-  border-radius: 20px;
-  font-size: 32px;
-}
-
 #wrapper .grade {
   display: flex;
   justify-content: center;
-  margin: 0 auto 90px auto;
-  gap: 100px;
-  font-size: 26px;
-  color: #000;
-  position: relative;
+  margin: 0 auto 70px auto;
 }
 
-#wrapper .grade span.grade_icon {
-  width: 50px;
-  margin-right: 10px;
+#wrapper .grade > div {
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+}
+
+#wrapper .grade > div span.grade_txt {
+  font-size: 26px;
+  text-align: right;
+  letter-spacing: 1px;
+}
+
+#wrapper .grade > div span.grade_txt strong {
+  font-weight: 700;
+  font-size: 45px;
+}
+
+#wrapper .grade > div span.grade_icon {
+  margin-left: 25px;
   display: grid;
 }
 
-#wrapper .grade span.grade_text {
+#wrapper .grade #amount span.grade_icon {
+  margin-left: 0;
+  margin-right: 25px;
+}
+
+#wrapper .grade #amount span.grade_txt {
   text-align: left;
-  line-height: 40px;
-  display: flex;
-  align-items: center;
-  font-size: 26px;
-  color: #aca7a7;
 }
 
-#wrapper .grade strong {
-  font-size: 45px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: url(../images/modern/grade-text-bg.png) no-repeat center center;
-  background-size: cover;
-  width: 177px;
-  height: 81px;
-  color: #fff;
-  padding-left: 10px;
-  margin-left: 10px;
-}
-
-#wrapper .grade #point {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#wrapper .grade #point .grade__icon {
-  position: absolute;
-  left: -30px;
-  top: -5px;
-  width: 83px;
-  height: auto;
-}
-
-#wrapper .grade #point span.grade_number {
-  font-size: 45px;
-  font-weight: 600;
-}
-
-#wrapper .grade #amount {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#wrapper .grade #amount .grade__icon {
-  position: absolute;
-  right: -40px;
-  bottom: -30px;
-  width: 86px;
-  height: auto;
+#wrapper .grade > div span.grade_icon img {
+  width: 114px;
+  height: 94px;
 }
 
 #wrapper #best_review {
   display: block;
-  position: relative;
-  overflow: initial;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
-#wrapper #best_review .title__section {
-  width: 335px;
-  margin: 0 auto 30px;
-  display: grid;
+#wrapper #best_review .title {
+  display: block;
+  width: 249px;
+  height: 75px;
+  margin: 30px auto 35px auto;
+  padding: 0px;
 }
+
 #wrapper .desc .info .icon {
   width: 35px;
   height: 30px;
 }
 
 #wrapper .desc .info .icon.star {
-  width: 160px;
-  height: 32px;
-  background: url("../images/fresh/star.svg") repeat center;
-  background-size: 32px;
+  display: inline-block;
+  margin-right: 10px;
+  width: 100px;
+  height: 20px;
+  background: url("../images/star.svg") repeat center;
+  background-size: 20px;
   background-repeat: repeat-x;
 }
 
+#wrapper .desc .info .icon.save {
+  float: right;
+  background: url(https://storage.keepgrow.com/admin/20230802041005246.png)
+    no-repeat center;
+  background-size: 20px;
+}
+
 #wrapper .desc .info .info_txt {
-  font-weight: 600;
-  font-size: 30px;
-  color: #344947;
-  padding-left: 15px;
-}
-#wrapper #review.desc .best_review--box {
-  background: #fff;
-  border-radius: 20px;
-  padding: 30px;
+  line-height: 35px;
+  font-weight: 700;
+  font-size: 26px;
+  margin-left: 15px;
+  letter-spacing: 1px;
 }
 
-#wrapper #review.desc .content {
-  border-bottom: 1px dashed #c0c0c0;
-  border-radius: 0;
-  padding: 0 0 30px;
+#wrapper #sub_title {
+  font-size: 32px;
+  background-color: #FEDCE0;
+  padding: 30px 20px;
+  border-radius: 15px;
+  letter-spacing: 1px;
+  width: 100%;
+  font-family: "JejuGothic-Regular";
+  -webkit-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.1);
 }
 
-#wrapper #review.desc .content:last-child {
-  border: none;
-}
-
-#wrapper #review.desc .review_date {
-  right: 20px;
+#wrapper #review.desc {
+  padding: 70px 0 0;
 }
