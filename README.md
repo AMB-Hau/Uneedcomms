@@ -34,7 +34,7 @@ Basic/Nature/Trendy
 고급형 - Luxury (베스트리뷰 제거) - /luxury/luxury_01.html
 고급형 - Luxury (별점/리뷰수/베스트리뷰 제거) - /luxury/luxury_02.html
 
-# Luxury
+# Modern
 일반형 - Modern - /modern/modern.html
 일반형 - Modern (베스트리뷰 제거) - /modern/modern_01.html
 일반형 - Modern (별점/리뷰수/베스트리뷰 제거) - /modern/modern_02.html
@@ -48,6 +48,5 @@ Basic/Nature/Trendy
 고급형 - Digital - /digital/digital.html
 고급형 - Digital (베스트리뷰 제거) - /digital/digital_01.html
 고급형 - Digital (별점/리뷰수/베스트리뷰 제거) - /digital/digital_02.html
-
 
 ```
