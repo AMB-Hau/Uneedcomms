@@ -190,7 +190,7 @@ body {
   display: block;
   margin: 0;
   padding: 0;
-  background: #b2e6fc;
+  background: #CCE1F4;
   font-family: var(--font-family-base);
   font-size: var(--font-size);
   font-weight: var(--font-weight-base);
@@ -425,14 +425,17 @@ strong {
 }
 
 #wrapper .grade #point {
-  background: url(../images/trendy/trendy-point-bg.png) no-repeat;
+  background: #3E82FF;
   background-size: contain;
-  width: 268px;
-  height: 126px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 70px;
+  -webkit-box-shadow: inset 0px 0px 10px 0px rgba(255,255,255,0.5);
+  -moz-box-shadow: inset 0px 0px 10px 0px rgba(255,255,255,0.5);
+  box-shadow: inset 0px 0px 10px 0px rgba(255,255,255,0.5);
+  padding: 20px 75px;
 }
 
 #wrapper .grade #point .grade__icon {
@@ -449,14 +452,17 @@ strong {
 }
 
 #wrapper .grade #amount {
-  background: url(../images/trendy/trendy-amount-bg.png) no-repeat;
+  background: #917EFC;
   background-size: contain;
-  width: 268px;
-  height: 126px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 70px;
+  -webkit-box-shadow: inset 0px 0px 10px 0px rgba(255,255,255,0.5);
+  -moz-box-shadow: inset 0px 0px 10px 0px rgba(255,255,255,0.5);
+  box-shadow: inset 0px 0px 10px 0px rgba(255,255,255,0.5);
+  padding: 20px 75px;
 }
 
 #wrapper .grade #amount .grade__icon {

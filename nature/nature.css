@@ -392,6 +392,7 @@ strong {
 
 #wrapper #main_title {
   position: relative;
+  margin-bottom: 70px;
 }
 
 #wrapper #main_title .title__before {
@@ -417,8 +418,9 @@ strong {
 
 #wrapper .grade {
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin: 70px auto 70px auto;
+  margin: 0 auto 70px auto;
   gap: 70px;
 }
 
@@ -458,23 +460,55 @@ strong {
 }
 
 #wrapper .grade #amount {
-  background: url(../images/nature/nature-amount-bg.svg) no-repeat;
-  background-size: contain;
-  width: 416px;
-  height: 159px;
+  background: url(../images/nature/amount-bg-full.png) no-repeat center center;
+  background-size: cover;
+  height: 101px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 60px 0 140px;
+}
+
+#wrapper .grade #amount:after {
+  position: absolute;
+  content: "";
+  background: url(../images/nature/amount-bg-after.png) no-repeat top center;
+  width: 12px;
+  height: 101px;
+  left: 100%;
+  top: 0;
+  background-size: cover;
+}
+
+#wrapper .grade #amount:before {
+  position: absolute;
+  content: "";
+  background: url(../images/nature/amount-bg-before.png) no-repeat top center;
+  width: 15px;
+  height: 101px;
+  right: 100%;
+  top: 0;
+  background-size: cover;
+}
+
+#wrapper .grade #amount span.grade_txt em {
+  transform: rotate(-10deg);
+  display: block;
+  padding: 13px 0;
+  letter-spacing: 2px;
 }
 
 #wrapper .grade #amount span.grade_txt {
   color: #fff;
-  transform: rotate(-10deg) translateY(-50%);
+  transform: translateY(-50%);
   position: absolute;
-  left: 50px;
-  top: 44%;
+  left: -27px;
+  top: 40%;
   font-family: "JejuMyeongjo";
+  background: url(../images/nature/amount-title-bg.png) no-repeat;
+  width: 125px;
+  height: 59px;
 }
 
 #wrapper .grade #amount strong {
@@ -482,7 +516,18 @@ strong {
   color: #624A2D;
   font-family: "AmericanTypewriter";
   letter-spacing: 1px;
-  padding: 10px 0 0 80px;
+  position: relative;
+}
+
+#wrapper .grade #amount strong:after {
+  position: absolute;
+  content: "";
+  background: url(../images/nature/the-leaf.png) no-repeat;
+  width: 77px;
+  height: 55px;
+  bottom: -50px;
+  right: -105px;
+  z-index: 1;
 }
 
 #wrapper .grade > div span.grade_txt {
