@@ -255,7 +255,6 @@ strong {
 }
 
 #wrapper .desc {
-  overflow: hidden;
   position: relative;
   margin: 0 auto;
   text-align: left;
@@ -408,6 +407,17 @@ strong {
 
 #wrapper #best_review {
   display: block;
+  position: relative;
+}
+
+#wrapper #best_review::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 100%;
+  height: 105px;
+  background: #2b2b2b;
+  content: "";
 }
 
 #wrapper #best_review .best_review--box {
@@ -473,7 +483,6 @@ strong {
 
 #wrapper #sub_title {
   width: 100%;
-  background-color: #2b2b2b;
   color: #fff;
   padding: 0 0 65px;
   font-size: 30px;
