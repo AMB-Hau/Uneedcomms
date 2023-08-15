@@ -292,8 +292,8 @@ strong {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: 50px;
-  padding: 0 15px 50px;
+  margin-bottom: 63px;
+  padding: 0 10px 45px 15px;
   border-bottom: 1px dashed #d4c5b3;
 }
 
@@ -303,11 +303,11 @@ strong {
 }
 
 #wrapper .desc .content .reviewImg {
-  width: 300px;
+  width: 292px;
   height: 315px;
   overflow: hidden;
   background-color: #f5efe7;
-  padding: 15px 15px 30px;
+  padding: 11px 11px 34px;
   -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.1);
   -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.1);
   box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.1);
@@ -317,14 +317,14 @@ strong {
 
 #wrapper .desc .content .reviewImg:after {
   position: absolute;
-  top: -20px;
+  top: -28px;
   left: 0;
   right: 0;
   margin: 0 auto;
   content: "";
   background: url(../images/nature/nature-sticker-image.svg) no-repeat;
-  width: 130px;
-  height: 50px;
+  width: 137px;
+  height: 59px;
   background-size: contain;
 }
 
@@ -335,8 +335,12 @@ strong {
 
 #wrapper .desc ul {
   background-color: #fff;
-  width: calc(100% - 330px);
+  width: calc(100% - 336px);
   position: relative;
+}
+
+#wrapper .desc .content.no-image {
+  padding: 0 10px 45px 38px;
 }
 
 #wrapper .desc .content.no-image ul {
@@ -349,7 +353,6 @@ strong {
 
 #wrapper .desc li.info {
   display: flex;
-  align-items: center;
 }
 
 #wrapper .desc li.info span {
@@ -358,11 +361,11 @@ strong {
 
 #wrapper .desc .review_content {
   text-align: left;
-  line-height: 30px;
+  line-height: 26px;
   color: var(--color-black);
-  letter-spacing: 1px;
+  letter-spacing: initial;
   font-size: 22px;
-  margin: 25px 0 30px;
+  margin: 30px 0;
   position: relative;
 }
 
@@ -377,7 +380,7 @@ strong {
 }
 /* theme-insta */
 #wrapper .index {
-  padding: 90px 45px 75px 45px;
+  padding: 118px 48px 75px;
 }
 
 #wrapper .header {
@@ -392,26 +395,28 @@ strong {
 
 #wrapper #main_title {
   position: relative;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 
 #wrapper #main_title .title__before {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 12%;
+  top: -6px;
+  left: 21px;
+  width: 108px;
+  height: 162px;
 }
 
 #wrapper #main_title .title__after {
   position: absolute;
-  top: -38%;
-  right: 0;
-  width: 20%;
+  top: -51%;
+  right: -17px;
+  width: 196px;
+  height: 240px;
 }
 
 #wrapper #main_title h1 {
   font-size: var(--h1-font-size);
-  line-height: 75px;
+  line-height: 70px;
   color: #997A55;
   font-family: "JejuMyeongjo";
 }
@@ -420,8 +425,8 @@ strong {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 70px auto;
-  gap: 70px;
+  margin: 0 auto 87px auto;
+  gap: 100px;
 }
 
 #wrapper .grade #point {
@@ -541,8 +546,8 @@ strong {
 
 #wrapper #best_review {
   display: block;
-  margin-bottom: 70px;
-  padding: 70px 20px 35px;
+  margin-bottom: 60px;
+  padding: 70px 32px 0;
   background-color: #fff;
   position: relative;
   overflow: initial;
@@ -550,7 +555,7 @@ strong {
 
 #wrapper #best_review .title__section {
   position: absolute;
-  top: -37px;
+  top: -34px;
   width: 26%;
   left: 0;
   right: 0;
@@ -559,6 +564,12 @@ strong {
 
 #wrapper .desc .content:last-child {
   border: none;
+  margin-bottom: 0;
+}
+
+#wrapper .desc .content:nth-child(2n) {
+  padding: 0 15px 45px 34px;
+  margin-bottom: 35px;
 }
 
 #wrapper .desc .content:nth-child(2n) .reviewImg {
@@ -576,11 +587,11 @@ strong {
 
 #wrapper .desc .info .icon.star {
   display: inline-block;
-  margin-right: 10px;
-  width: 100px;
-  height: 20px;
+  margin-right: 15px;
+  width: 140px;
+  height: 28px;
   background: url("../images/nature/star.svg") repeat center;
-  background-size: 20px;
+  background-size: 28px;
   background-repeat: repeat-x;
 }
 
@@ -597,11 +608,25 @@ strong {
   font-size: 30px;
   font-family: "JejuMyeongjo";
   color: #997A55;
-  margin-bottom: 60px;
-  letter-spacing: 1px;
+  margin-bottom: 48px;
+  letter-spacing: -1px;
 }
 
 #wrapper #review.desc {
-  padding: 70px 20px 35px;
+  padding: 70px 32px 10px;
   background: #fff;
+}
+
+#wrapper #review.desc .content {
+  padding-bottom: 36px;
+}
+
+#wrapper #review.desc .content:nth-child(2) {
+  padding-bottom: 45px;
+  margin-bottom: 59px;
+}
+
+#wrapper #review.desc .content:nth-child(3) {
+  padding-bottom: 72px;
+  margin-bottom: 35px;
 }
