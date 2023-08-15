@@ -239,8 +239,8 @@ strong {
 
 .title__section {
   position: relative;
-  width: 95%;
-  margin: 0 auto 50px;
+  width: 91%;
+  margin: 0 auto 37px;
 }
 
 .title__section:after {
@@ -264,6 +264,7 @@ strong {
   display: table;
   z-index: 1;
   padding: 0 10px;
+  letter-spacing: initial;
 }
 
 #wrapper .title,
@@ -300,7 +301,7 @@ strong {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 #wrapper .desc .content:last-child {
@@ -310,7 +311,7 @@ strong {
 #wrapper .desc .content .reviewImg {
   width: 300px;
   height: 300px;
-  border-radius: 20px;
+  border-radius: 15px;
   overflow: hidden;
 }
 
@@ -320,9 +321,9 @@ strong {
 }
 
 #wrapper .desc ul {
-  padding: 25px 30px 45px;
+  padding: 33px 43px 45px;
   background-color: #fff;
-  width: calc(100% - 330px);
+  width: calc(100% - 324px);
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
@@ -332,6 +333,7 @@ strong {
 
 #wrapper .desc .content.no-image ul {
   width: 100%;
+  padding: 33px 40px 56px;
 }
 
 #wrapper .desc li {
@@ -341,7 +343,7 @@ strong {
 #wrapper .desc li.info {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 #wrapper .desc li.info span {
@@ -350,7 +352,7 @@ strong {
 
 #wrapper .desc .review_content {
   text-align: left;
-  line-height: 30px;
+  line-height: 27px;
   color: var(--color-black);
   letter-spacing: -1px;
   font-size: 22px;
@@ -358,18 +360,21 @@ strong {
 #wrapper .desc .review_date {
   color: #A5A5A5;
   font-family: Pretendard;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 0px;
+  letter-spacing: -0.4px;
   position: absolute;
   right: 30px;
-  bottom: 20px;
+  bottom: 26px;
 }
-/* theme-insta */
+#wrapper .desc .content.no-image .review_date {
+  bottom: 25px;
+}
+
 #wrapper .index {
-  padding: 90px 45px 30px 45px;
+  padding: 76px 30px 30px;
 }
 
 #wrapper .header {
@@ -387,17 +392,18 @@ strong {
 }
 
 #wrapper #main_title h1 {
-  margin-bottom: 60px;
+  margin-bottom: 75px;
+  letter-spacing: -3px;
 }
 
 #wrapper .grade {
   display: flex;
   justify-content: center;
-  margin: 0 auto 90px auto;
+  margin: 0 auto 78px auto;
+  gap: 95px;
 }
 
 #wrapper .grade > div {
-  padding: 0 50px;
   display: flex;
   align-items: center;
 }
@@ -410,14 +416,14 @@ strong {
   font-weight: 600;
   background-color: #fff;
   border-radius: 10px;
-  padding: 10px 0;
+  padding: 8px 0;
   margin-right: 20px;
   width: 145px;
 }
 
 #wrapper .grade > div span.grade_txt img {
   width: 25px;
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 #wrapper .grade > div strong {
@@ -428,7 +434,11 @@ strong {
 
 #wrapper #best_review {
   display: block;
-  margin-bottom: 70px;
+  margin-bottom: 51px;
+}
+
+#wrapper #best_review .title__section {
+  margin-bottom: 49px;
 }
 
 #wrapper #best_review .title {
@@ -447,10 +457,10 @@ strong {
 #wrapper .desc .info .icon.star {
   display: inline-block;
   margin-right: 10px;
-  width: 100px;
-  height: 20px;
-  background: url("../images/basic/star.svg") repeat center;
-  background-size: 20px;
+  width: 150px;
+  height: 30px;
+  background: url(../images/basic/star.svg) repeat center;
+  background-size: 30px;
   background-repeat: repeat-x;
 }
 
@@ -462,21 +472,25 @@ strong {
 }
 
 #wrapper .desc .info .info_txt {
-  line-height: 35px;
+  line-height: 30px;
   letter-spacing: -1px;
   font-weight: 700;
   font-size: 26px;
 }
 
-#wrapper #sub_title {
+#wrapper #sub_title p {
   font-size: 33px;
   background-color: #dddad7;
-  padding: 30px 20px;
+  padding: 30px 20px 23px;
   border-radius: 10px;
-  letter-spacing: 1px;
+  letter-spacing: 0;
   width: 100%;
 }
 
 #wrapper #review.desc {
-  padding: 70px 0 0;
+  padding: 51px 0 0;
+}
+
+#wrapper #review.desc .content.no-image ul {
+  padding: 33px 40px 69px;
 }
