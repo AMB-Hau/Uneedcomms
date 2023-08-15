@@ -259,7 +259,7 @@ strong {
   width: 100%;
   margin-bottom: 30px;
   background: #fff;
-  padding: 20px 40px 20px 20px;
+  padding: 14px 40px 17px 15px;
   border: 2px solid #72D6C2;
   border-radius: 50px;
   position: relative;
@@ -291,11 +291,11 @@ strong {
 }
 
 #wrapper .desc .content.no-image {
-  padding: 20px 40px 50px 40px;
+  padding: 7px 40px 20px 37px;
 }
 
 #wrapper #best_review.desc .content:nth-child(2n) {
-  padding: 20px 20px 20px 40px;
+  padding: 13px 15px 18px 39px;
 }
 
 #wrapper #best_review.desc .content:nth-child(2n) .reviewImg {
@@ -304,11 +304,12 @@ strong {
 
 #wrapper #best_review.desc .content:nth-child(2n) ul {
   order: 1;
+  width: calc(100% - 355px);
 }
 
 #wrapper #best_review.desc .content:nth-child(2n) .review_date, #wrapper .desc .content.no-image .review_date {
   right: auto;
-  left: 40px;
+  left: 44px;
 }
 
 
@@ -319,13 +320,14 @@ strong {
 #wrapper .desc li.info {
   display: flex;
   align-items: center;
+  margin-top: 25px;
 }
 
 #wrapper .desc .review_content {
   text-align: left;
   line-height: 30px;
   color: var(--color-black);
-  letter-spacing: 1px;
+  letter-spacing: -1.5px;
   font-size: 22px;
   margin: 15px 0 0;
   position: relative;
@@ -336,16 +338,20 @@ strong {
   color: #656565;
   font-size: 16px;
   position: absolute;
-  right: 40px;
-  bottom: 20px;
+  right: 38px;
+  bottom: 16px;
+  display: flex;
+  align-items: center;
 }
 #wrapper .desc .review_date span {
   color: #262626;
   font-weight: 600;
+  display: block;
+  padding-right: 14px;
 }
 /* theme-insta */
 #wrapper .index {
-  padding: 100px 45px 45px 45px;
+  padding: 110px 70px 45px 70px;
   background: url(../images/fresh/fresh-bg.png) no-repeat top center;
 }
 
@@ -361,7 +367,7 @@ strong {
 
 #wrapper #main_title {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 65px;
 }
 
 #wrapper #main_title h1 {
@@ -371,6 +377,7 @@ strong {
   z-index: 1;
   font-weight: 700;
   color: #34AA8E;
+  letter-spacing: -3px;
 }
 
 #wrapper #sub_title {
@@ -379,17 +386,18 @@ strong {
   line-height: 35px;
   background-color: #72D6C2;
   display: table;
-  padding: 30px 70px;
+  padding: 29px 70px;
   border-radius: 50px;
-  margin: 0 auto 70px;
+  margin: 0 auto 80px;
   color: #fff;
+  letter-spacing: -3.5px;
 }
 
 #wrapper .grade {
   display: flex;
   justify-content: center;
-  margin: 0 auto 70px auto;
-  gap: 30px;
+  margin: 0 auto 91px auto;
+  gap: 25px;
   font-size: 26px;
   color: #000;
   position: relative;
@@ -398,18 +406,24 @@ strong {
 #wrapper .grade > div {
   background: #fff;
   border-radius: 100px;
-  padding: 30px 60px 30px 40px;
+  padding: 22px 49px 17px 30px;
 }
 
 #wrapper .grade span.grade_icon {
-  width: 65px;
-  margin-right: 15px;
+  width: 85px;
+  margin: 7px 0 0 0;
   display: grid;
+}
+
+#wrapper .grade #amount span.grade_icon {
+  width: 70px;
+  margin-top: 13px;
 }
 
 #wrapper .grade span.grade_text {
   text-align: left;
   line-height: 40px;
+  padding-left: 10px;
 }
 
 #wrapper .grade strong {
@@ -421,7 +435,6 @@ strong {
 #wrapper .grade #point {
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -441,7 +454,6 @@ strong {
 #wrapper .grade #amount {
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -457,17 +469,17 @@ strong {
   display: block;
   position: relative;
   overflow: initial;
-  margin-bottom: 70px;
+  margin-bottom: 80px;
 }
 
 #wrapper #best_review .title__section {
   display: table;
-  margin: 0 auto 60px;
+  margin: 0 auto 58px;
   color: #33C6A9;
   font-size: 37px;
   font-family: 'Anek Devanagari', sans-serif;
   border: 2px solid #33C6A9;
-  padding: 35px 60px 25px;
+  padding: 31px 60px 21px;
   border-radius: 60px;
   background: #fff;
   line-height: 1;
@@ -478,10 +490,10 @@ strong {
 }
 
 #wrapper .desc .info .icon.star {
-  width: 160px;
-  height: 32px;
-  background: url("../images/fresh/star.svg") repeat center;
-  background-size: 32px;
+  width: 190px;
+  height: 38px;
+  background: url(../images/fresh/star.svg) repeat center;
+  background-size: 38px;
   background-repeat: repeat-x;
 }
 
@@ -489,5 +501,23 @@ strong {
   font-weight: 600;
   font-size: 30px;
   color: #344947;
-  padding-left: 15px;
+  padding-left: 12px;
+}
+#wrapper #review.desc li.info {
+  margin-top: 9px;
+}
+#wrapper #review.desc .review_content {
+  margin: 32px 0 0;
+}
+#wrapper #review.desc .content {
+  padding: 14px 40px 35px 17px;
+}
+#wrapper #review.desc .content.no-image {
+  padding: 23px 40px 34px 36px;
+}
+#wrapper #review.desc .content.no-image .review_content {
+  margin: 16px 0 0;
+}
+#wrapper #review.desc .content.no-image .review_date {
+  bottom: 27px;
 }
