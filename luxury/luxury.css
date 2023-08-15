@@ -237,15 +237,15 @@ strong {
   font-family: 'Raleway', sans-serif;
   font-size: 37px;
   color: #fff;
-  letter-spacing: 1px;
-  margin-bottom: 50px;
+  letter-spacing: 0.4px;
+  margin-bottom: 30px;
 }
 
 .title__section img {
   width: 136px;
   height: auto;
   display: block;
-  margin: 0 auto 10px;
+  margin: 0 auto -3px;
 }
 
 #wrapper .title,
@@ -256,15 +256,16 @@ strong {
 
 #wrapper .desc {
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto 38px;
   text-align: left;
 }
 
 #wrapper .title h1 {
   color: #E1CA8E;
-  font-size: 50px;
+  font-size: 55px;
   font-weight: 600;
-  margin-bottom: 80px;
+  margin-bottom: 127px;
+  letter-spacing: -1.8px;
 }
 
 #wrapper .desc .content {
@@ -273,11 +274,17 @@ strong {
   width: 100%;
   margin-bottom: 30px;
   padding-bottom: 30px;
-  border-bottom: 2px dashed #6a6968;
+  border-bottom: 1px dashed #6a6968;
 }
 
 #wrapper .desc .content:last-child {
   margin-bottom: 0;
+  padding: 0;
+  border-bottom: 0;
+}
+
+#wrapper .desc .content.no-image ul  {
+  padding-top: 0;
 }
 
 #wrapper .desc .content .reviewImg {
@@ -287,7 +294,7 @@ strong {
   overflow: hidden;
   background: url(../images/luxury/bg-image.png) no-repeat;
   background-size: cover;
-  padding: 7px;
+  padding: 5px;
 }
 
 #wrapper .desc .content .reviewImg img {
@@ -299,7 +306,8 @@ strong {
 }
 
 #wrapper .desc ul {
-  width: calc(100% - 300px);
+  width: calc(100% - 305px);
+  padding-top: 18px;
 }
 
 #wrapper .desc .content.no-image ul {
@@ -313,7 +321,7 @@ strong {
 #wrapper .desc li.info {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 #wrapper .desc li.info span {
@@ -322,25 +330,35 @@ strong {
 
 #wrapper .desc .review_content {
   text-align: left;
-  line-height: 30px;
+  line-height: 29px;
   color: var(--color-white);
   font-size: 22px;
+  letter-spacing: -1.5px;
 }
 #wrapper .desc .review_date {
   font-size: 16px;
   color: #d3d3d3;
-  letter-spacing: 1px;
-  text-align: right;
-  margin-top: 30px;
+  letter-spacing: 0.3px;
+  margin-top: 50px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 #wrapper .desc .review_date span {
   color: #FCCE56;
   font-weight: 600;
+  display: block;
+  padding-right: 8px;
+}
+
+#wrapper .desc .content.no-image .review_date {
+  margin-top: 27px;
 }
 
 #wrapper .index {
-  padding: 120px 0 0 0;
-  background: url(../images/luxury/luxury-bg.png) no-repeat center top 40px;
+  padding: 123px 0 0 0;
+  background: url(../images/luxury/luxury-bg.png) no-repeat center top 36px;
   background-size: 90%;
 }
 
@@ -373,7 +391,6 @@ strong {
 
 #wrapper .grade > div {
   display: flex;
-  align-items: center;
 }
 
 #wrapper .grade > div span.grade_img {
@@ -387,6 +404,8 @@ strong {
   text-align: left;
   font-weight: 200;
   letter-spacing: 1px;
+  line-height: 35px;
+  margin-top: 8px;
 }
 
 #wrapper .grade > div span.grade_txt strong {
@@ -407,24 +426,13 @@ strong {
 
 #wrapper #best_review {
   display: block;
-  position: relative;
-}
-
-#wrapper #best_review::after {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  top: 100%;
-  height: 105px;
-  background: #2b2b2b;
-  content: "";
 }
 
 #wrapper #best_review .best_review--box {
-  background-color: #2b2b2b;
-  padding: 65px 85px;
+  padding: 70px 127px;
   margin: 0 auto;
   position: relative;
+  background-image: linear-gradient(#2b2b2a, #1b1b1b);
 }
 
 #wrapper #best_review .best_review--box:before {
@@ -484,12 +492,12 @@ strong {
 #wrapper #sub_title {
   width: 100%;
   color: #fff;
-  padding: 0 0 65px;
+  padding: 0 0 40px;
   font-size: 30px;
 }
 
 #wrapper #review.desc {
-  padding: 70px 85px 30px;
+  padding: 70px 127px 30px;
 }
 
 #wrapper #review.desc .content:last-child {
@@ -511,8 +519,14 @@ strong {
 
 #wrapper #review.desc ul {
   width: calc(100% - 230px);
+  padding: 0;
 }
-
 #wrapper #review.desc .content.no-image ul {
   width: 100%;
+}
+#wrapper #review.desc li.info {
+  margin-bottom: 29px;
+}
+#wrapper #review.desc .review_date {
+  margin-top: 27px;
 }
