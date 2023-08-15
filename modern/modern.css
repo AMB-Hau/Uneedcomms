@@ -259,8 +259,8 @@ strong {
   width: 100%;
   margin-bottom: 30px;
   background: #fff;
-  padding: 20px 40px 20px 20px;
-  border-radius: 25px;
+  padding: 15px 140px 15px 16px;
+  border-radius: 20px;
   position: relative;
 }
 
@@ -281,16 +281,34 @@ strong {
   height: 100%;
 }
 
+#wrapper #review.desc .content .reviewImg {
+  width: 256px;
+  height: 256px;
+}
+
+#wrapper #review.desc .content:nth-child(3) {
+  padding-bottom: 60px;
+  margin-bottom: 26px;
+}
+
 #wrapper .desc ul {
-  width: calc(100% - 300px);
+  width: calc(100% - 290px);
+}
+
+#wrapper #review.desc ul {
+  width: calc(100% - 282px);
 }
 
 #wrapper .desc .content.no-image ul {
-  width: 100%;
+  width: 100% !important;
 }
 
 #wrapper .desc .content.no-image {
-  padding: 20px 40px 50px 40px;
+  padding: 32px 140px 56px 29px;
+}
+
+#wrapper .desc .content.no-image .review_content {
+  margin-top: 14px;
 }
 
 #wrapper .desc li {
@@ -304,29 +322,37 @@ strong {
 
 #wrapper .desc .review_content {
   text-align: left;
-  line-height: 30px;
+  line-height: 28px;
   color: var(--color-black);
-  letter-spacing: 1px;
+  letter-spacing: -1.3px;
   font-size: 22px;
-  margin: 15px 0 0;
+  margin: 30px 0 0;
   position: relative;
   padding-bottom: 35px;
 }
 
+#wrapper #review.desc .review_content {
+  margin: 17px 0 0;
+}
+
 #wrapper .desc .review_date {
   color: #656565;
-  font-size: 16px;
+  font-size: 18px;
   position: absolute;
-  right: 40px;
+  right: 72px;
   bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 #wrapper .desc .review_date span {
   color: #262626;
   font-weight: 600;
+  display: block;
+  padding-right: 12px;
 }
 /* theme-insta */
 #wrapper .index {
-  padding: 100px 45px 45px 45px;
+  padding: 96px 30px 45px 30px;
 }
 
 #wrapper .header {
@@ -341,7 +367,7 @@ strong {
 
 #wrapper #main_title {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 62px;
 }
 
 #wrapper #main_title h1 {
@@ -351,23 +377,25 @@ strong {
   z-index: 1;
   font-weight: 700;
   color: #fff;
+  letter-spacing: -2.5px;
 }
 
 #wrapper #sub_title {
   font-family: 'Anek Devanagari', sans-serif;
   background-color: #575757;
   color: #fff;
-  padding: 25px 0 16px;
-  margin-bottom: 50px;
+  padding: 22px 0 13px;
+  margin-bottom: 60px;
   border-radius: 20px;
   font-size: 32px;
+  letter-spacing: -2.6px;
 }
 
 #wrapper .grade {
   display: flex;
   justify-content: center;
-  margin: 0 auto 90px auto;
-  gap: 100px;
+  margin: 0 auto 112px auto;
+  gap: 110px;
   font-size: 26px;
   color: #000;
   position: relative;
@@ -375,8 +403,12 @@ strong {
 
 #wrapper .grade span.grade_icon {
   width: 50px;
-  margin-right: 10px;
   display: grid;
+}
+
+#wrapper .grade #point span.grade_icon {
+  width: 58px;
+  margin-top: 8px;
 }
 
 #wrapper .grade span.grade_text {
@@ -390,19 +422,20 @@ strong {
 
 #wrapper .grade span.grade_text em {
   min-width: 90px;
+  letter-spacing: -2px;
+  display: block;
+  margin: 0 15px 0 0px;
 }
 
 #wrapper .grade strong {
   font-size: 45px;
   font-weight: 700;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: end;
   background-color: #575757;
   background-size: cover;
   color: #fff;
-  margin-left: 25px;
-  padding: 20px 30px;
+  padding: 20px 22px 20px 26px;
   border-radius: 20px;
   position: relative;
 }
@@ -457,12 +490,12 @@ strong {
   display: block;
   position: relative;
   overflow: initial;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 #wrapper #best_review .title__section {
-  width: 335px;
-  margin: 0 auto 30px;
+  width: 355px;
+  margin: 0 auto 40px;
   display: grid;
 }
 #wrapper .desc .info .icon {
@@ -480,26 +513,35 @@ strong {
 
 #wrapper .desc .info .info_txt {
   font-weight: 600;
-  font-size: 30px;
+  font-size: 26px;
   color: #344947;
-  padding-left: 15px;
+  padding-left: 11px;
 }
 #wrapper #review.desc .best_review--box {
   background: #fff;
   border-radius: 20px;
-  padding: 30px;
+  padding: 30px 30px 21px;
 }
 
 #wrapper #review.desc .content {
   border-bottom: 1px dashed #c0c0c0;
   border-radius: 0;
-  padding: 0 0 30px;
+  padding: 0 0 34px;
+  margin-bottom: 43px;
+}
+
+#wrapper #review.desc .content.no-image {
+  padding-bottom: 60px;
+  margin-bottom: 25px;
 }
 
 #wrapper #review.desc .content:last-child {
   border: none;
+  margin-bottom: 0;
 }
 
 #wrapper #review.desc .review_date {
-  right: 20px;
+  right: 43px;
+  bottom: 32px;
+  font-size: 16px;
 }
