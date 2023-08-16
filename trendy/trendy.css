@@ -299,8 +299,8 @@ strong {
   width: calc(100% - 230px);
   position: relative;
   border: 2px solid #111;
-  padding: 30px 40px 40px;
-  border-radius: 70px 0 70px 70px;
+  padding: 28px 46px 42px;
+  border-radius: 100px 0 100px 100px;
 }
 
 #wrapper .desc .content.no-image ul {
@@ -313,7 +313,6 @@ strong {
 
 #wrapper .desc li.info {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -324,11 +323,10 @@ strong {
 
 #wrapper .desc .review_content {
   text-align: left;
-  line-height: 35px;
+  line-height: 38px;
   color: var(--color-black);
-  letter-spacing: 1px;
-  font-size: 28px;
-  margin: 25px 0 0;
+  font-size: 26px;
+  margin: 22px 0 0;
   position: relative;
 }
 
@@ -339,17 +337,18 @@ strong {
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0px;
+  padding-top: 16px;
 }
 #wrapper .desc .review_date span {
   color: #b5b5b5;
   font-weight: 400;
-  padding-left: 15px;
+  padding-left: 11px;
 }
 /* theme-insta */
 #wrapper .index {
-  padding: 30px 45px 45px 45px;
+  padding: 30px 80px 45px;
   background: url(../images/trendy/trendy-star-bg.png) no-repeat top 65px center;
-  background-size: 83%;
+  background-size: 82%;
 }
 
 #wrapper .header {
@@ -364,7 +363,7 @@ strong {
 
 #wrapper #main_title {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 #wrapper #main_title:before {
@@ -374,8 +373,8 @@ strong {
   background-size: contain;
   width: 187px;
   height: 195px;
-  left: -45px;
-  top: 0;
+  left: -80px;
+  top: 19px;
 }
 
 #wrapper #main_title:after {
@@ -384,9 +383,8 @@ strong {
   height: 84px;
   content: "";
   background: url(../images/trendy/trendy-plane.png) no-repeat;
-  right: -45px;
-  top: 155%;
-  transform: translateY(-50%);
+  right: -80px;
+  top: 131%;
 }
 
 #wrapper #main_title h1 {
@@ -394,25 +392,25 @@ strong {
   font-family: "GmarketSansBold";
   position: relative;
   z-index: 1;
-  letter-spacing: -2px;
+  letter-spacing: -3px;
 }
 
 #wrapper #main_title .title__real-review {
   font-family: "GmarketSansBold";
   font-size: 15px;
-  padding: 10px 25px;
+  padding: 10px 24px;
   border: 1px solid #111;
   text-transform: uppercase;
   display: table;
   border-radius: 30px;
-  letter-spacing: 1px;
-  margin: 0 auto 60px;
+  letter-spacing: -1px;
+  margin: 0 auto 74px;
 }
 
 #wrapper .grade {
   display: flex;
   justify-content: center;
-  margin: 0 auto 70px auto;
+  margin: 0 auto 90px auto;
   gap: 20px;
   font-size: 24px;
   color: #fff;
@@ -435,7 +433,7 @@ strong {
   -webkit-box-shadow: inset 0px 0px 10px 0px rgba(255,255,255,0.5);
   -moz-box-shadow: inset 0px 0px 10px 0px rgba(255,255,255,0.5);
   box-shadow: inset 0px 0px 10px 0px rgba(255,255,255,0.5);
-  padding: 20px 75px;
+  padding: 22px 75px;
 }
 
 #wrapper .grade #point .grade__icon {
@@ -458,7 +456,7 @@ strong {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 70px;
+  border-radius: 45px;
   -webkit-box-shadow: inset 0px 0px 10px 0px rgba(255,255,255,0.5);
   -moz-box-shadow: inset 0px 0px 10px 0px rgba(255,255,255,0.5);
   box-shadow: inset 0px 0px 10px 0px rgba(255,255,255,0.5);
@@ -467,9 +465,9 @@ strong {
 
 #wrapper .grade #amount .grade__icon {
   position: absolute;
-  right: -40px;
-  bottom: -30px;
-  width: 86px;
+  right: -44px;
+  bottom: -31px;
+  width: 94px;
   height: auto;
 }
 
@@ -477,16 +475,21 @@ strong {
   display: block;
   position: relative;
   overflow: initial;
-  margin-bottom: 70px;
+  margin-bottom: 57px;
 }
 
 #wrapper #best_review .title__section {
-  width: 365px;
-  margin: 0 auto;
+  width: 395px;
+  margin-left: 195px;
+  margin-bottom: -4px;
 }
 
 #wrapper .desc .content:last-child {
   border: none;
+}
+
+#wrapper .desc .content:nth-child(3) ul {
+  padding-bottom: 38px;
 }
 
 #wrapper .desc .content:nth-child(2n) .reviewImg {
@@ -495,7 +498,12 @@ strong {
 
 #wrapper .desc .content:nth-child(2n) ul {
   order: 2;
-  border-radius: 0 70px 70px 70px;
+  border-radius: 0 100px 100px 100px;
+  padding: 28px 35px 42px 47px;
+}
+
+#wrapper .desc .content:nth-child(2n) .review_date {
+  margin-right: 37px;
 }
 
 #wrapper .desc .info .icon {
@@ -515,13 +523,13 @@ strong {
   font-weight: 600;
   font-size: 35px;
   color: var(--color-text);
-  padding-left: 15px;
+  padding-left: 10px;
 }
 
 #wrapper #sub_title p {
   font-size: 33px;
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
   font-weight: 500;
   letter-spacing: 2px;
 }
@@ -532,13 +540,14 @@ strong {
 
 #wrapper #review.desc .content {
   background: #fff;
-  padding: 25px;
-  border-radius: 40px;
+  padding: 28px 30px 32px;
+  border-radius: 60px;
+  margin-bottom: 32px;
 }
 #wrapper #review.desc .content .reviewImg {
   width: 240px;
   height: 240px;
-  border-radius: 40px;
+  border-radius: 44px;
 }
 #wrapper #review.desc ul {
   width: calc(100% - 270px);
@@ -549,7 +558,8 @@ strong {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
+  padding-top: 10px;
 }
 #wrapper #review.desc .review_date span {
   padding: 0;
@@ -557,17 +567,23 @@ strong {
 #wrapper #review.desc .review_date span:first-child {
   font-weight: 600;
   color: var(--color-text);
+  font-size: 25px;
 }
 #wrapper #review.desc li.info {
   justify-content: start;
+  align-items: center;
 }
 #wrapper #review.desc .info .info_txt {
   font-size: 25px;
-  margin-top: 4px;
+  font-weight: 700;
 }
 #wrapper #review.desc .review_content {
-  font-size: 27px;
+  font-size: 25px;
+  margin: 18px 0 0;
 }
 #wrapper #review.desc .no-image ul {
   width: 100%;
+}
+#wrapper #review.desc .content:nth-child(2n) .review_date {
+  margin-right: 0;
 }
